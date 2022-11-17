@@ -20,6 +20,11 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink to='/cars' activeClassName='active'>
+                Cars
+              </NavLink>
+            </li>
+            <li>
               <NavLink to='/about'>About</NavLink>
             </li>
             <li>
