@@ -1,18 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
 *,
 *::before,
 *::after {
   margin: 0;
 }
 .home-container {
-  background-image: url("https://res.cloudinary.com/dphlf7a8o/image/upload/v1668576162/pexels-hyundai-motor-group-11194877_1_c7fra1.jpg");
+  background-image: url('https://res.cloudinary.com/dphlf7a8o/image/upload/v1668576162/pexels-hyundai-motor-group-11194877_1_c7fra1.jpg');
   background-position: center;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 94vh;
   flex-direction: column;
- background-repeat: no-repeat;
- background-size: cover;
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .button {
   background-color: black;
@@ -23,20 +24,50 @@
   font-style: oblique;
   font-size: 1.4rem;
 }
-.shopnow-btn{
+.shopnow-btn {
   padding: 1rem;
   position: absolute;
-  bottom: 0;
-
+  bottom: 5vh;
+  animation: drop-down-btn 4s 3s both linear;
 }
 .button:hover {
   color: brown;
 }
-.heading-container{
+.heading-container {
   padding: 1rem;
   /* width: 60%; */
   letter-spacing: 1px;
   font-size: larger;
   color: white;
+}
+.home-animation {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  animation: fade-in-right 3s 2s linear both;
+}
 
+@keyframes fade-in-right {
+  from {
+    transform: translateX(-20vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0vh);
+    opacity: 1;
+  }
+}
+
+@keyframes drop-down-btn {
+  0% {
+    transform: translateY(15vh);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-15vh);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
 }
