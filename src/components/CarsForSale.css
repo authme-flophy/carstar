@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,7 +8,11 @@
 .cars-container {
   display: flex;
   width: 100%;
-
+  background-image: url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
   margin-top: 1rem;
 }
 .btn-container {
@@ -15,11 +21,81 @@
   gap: 1rem;
   background-color: gray;
   padding: 1rem;
+  height: fit-content;
 }
 .car-button {
   background-color: black;
   color: white;
-  border-radius: 0.5rem;
   font-weight: bold;
   padding: 5px;
+  /* From https://css.glass */
+  background: rgba(1, 1, 1, 0.21);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  border: 1px solid rgba(1, 1, 1, 0.19);
+  cursor: pointer;
+}
+
+.my-cars {
+  padding: 1rem;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.my-cars-container {
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  /* From https://css.glass */
+  background: rgba(134, 143, 150, 0.34);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(134, 143, 150, 0.35);
+  display: flex;
+  width: 100%;
+}
+.car-image-card {
+  width: 40%;
+  height: 20vh;
+}
+.car-image-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-car {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+.about-car #car-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.about-car p {
+  margin-bottom: 0.3rem;
+}
+.about-car .car-cost {
+  margin-top: 0.6rem;
+}
+.about-car .car-details-btn {
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+}
+.about-car .car-details-btn button {
+  color: #fff;
+  background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+  padding: 0.5rem 0.9rem;
+  border-radius: 5px;
+  border: none;
+}
+.about-car .car-details-btn button:hover {
+  color: black;
+  cursor: pointer;
+  transition: 2s ease-in all;
 }

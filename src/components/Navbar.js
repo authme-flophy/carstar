@@ -15,14 +15,10 @@ const Navbar = () => {
         <div className='navbar-nav'>
           <ul>
             <li>
-              <NavLink to='/' activeClassName='active'>
-                Home
-              </NavLink>
+              <NavLink to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink to='/cars' activeClassName='active'>
-                Cars
-              </NavLink>
+              <NavLink to='/cars'>Cars</NavLink>
             </li>
             <li>
               <NavLink to='/about'>About</NavLink>
