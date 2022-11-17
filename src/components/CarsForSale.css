@@ -3,20 +3,23 @@
 *::after {
   margin: 0;
 }
-.cars-container{
-    background-image: url("https://res.cloudinary.com/dphlf7a8o/image/upload/v1668576162/pexels-hyundai-motor-group-11194877_1_c7fra1.jpg");
-    background-position: center;
+.cars-container {
   display: flex;
   width: 100%;
-  height: 100vh;
+  
+  margin-top: 1rem;
+}
+.btn-container {
+  display: flex;
   flex-direction: column;
- background-repeat: no-repeat;
- background-size: cover;
-}
-.btn-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: absolute;
-   
-}
+ gap: 1rem;
+ background-color: gray;
+ padding: 1rem;
+ 
+ }
+ .car-button{
+  background-color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+ }
