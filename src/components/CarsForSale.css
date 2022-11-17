@@ -6,20 +6,20 @@
 .cars-container {
   display: flex;
   width: 100%;
-  
+
   margin-top: 1rem;
 }
 .btn-container {
   display: flex;
   flex-direction: column;
- gap: 1rem;
- background-color: gray;
- padding: 1rem;
- 
- }
- .car-button{
+  gap: 1rem;
+  background-color: gray;
+  padding: 1rem;
+}
+.car-button {
   background-color: black;
+  color: white;
+  border-radius: 0.5rem;
   font-weight: bold;
-  border-radius: 10px;
   padding: 5px;
- }
+}
